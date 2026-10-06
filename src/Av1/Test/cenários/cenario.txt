@@ -1,0 +1,16 @@
+ Critérios de Aceite (Regras de Negócio):
+
+A função calcular_desconto(valor_compra, tipo_cliente) deve retornar o valor 
+do desconto em Reais (R$), respeitando:
+
+    - Compras com valor menor que R$ 100,00 não recebem desconto base (0%).
+
+    - Compras com valor igual ou maior que R$ 100,00 e 
+    menor que R$ 500,00 recebem 10% de desconto base.
+
+    - Compras com valor igual ou maior que R$ 500,00 recebem 20% de desconto base.
+
+Se o tipo_cliente for "VIP" (independente de estar escrito em maiúsculo ou minúsculo), 
+deve-se adicionar 5% extras sobre a porcentagem base (ex: 0% vira 5%, 10% vira 15%, etc.). 
+
+Para clientes "COMUM", não há acréscimo.
