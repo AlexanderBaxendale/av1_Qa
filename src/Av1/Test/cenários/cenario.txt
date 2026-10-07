@@ -14,3 +14,5 @@ Se o tipo_cliente for "VIP" (independente de estar escrito em maiúsculo ou min�
 deve-se adicionar 5% extras sobre a porcentagem base (ex: 0% vira 5%, 10% vira 15%, etc.). 
 
 Para clientes "COMUM", não há acréscimo.
+
+Regra de Teto: O valor máximo em dinheiro do desconto nunca pode ultrapassar R$ 200,00.
