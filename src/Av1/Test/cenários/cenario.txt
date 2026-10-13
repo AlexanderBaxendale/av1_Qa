@@ -1,4 +1,4 @@
- Critérios de Aceite (Regras de Negócio):
+Critérios de Aceite (Regras de Negócio):
 
 A função calcular_desconto(valor_compra, tipo_cliente) deve retornar o valor 
 do desconto em Reais (R$), respeitando:
@@ -16,3 +16,22 @@ deve-se adicionar 5% extras sobre a porcentagem base (ex: 0% vira 5%, 10% vira 1
 Para clientes "COMUM", não há acréscimo.
 
 Regra de Teto: O valor máximo em dinheiro do desconto nunca pode ultrapassar R$ 200,00.
+
+x------------------------------------------------------------------------------------------x
+
+Lista de Cenários de Testes:  
+
+(ID do teste, Cenário do Teste, resultado esperado)
+ 
+CT01	Compra abaixo de R$ 100, cliente comum	Sem desconto
+CT02	Compra abaixo de R$ 100, cliente VIP	5% de desconto
+CT03	Compra de R$ 100, cliente comum	10% de desconto
+CT04	Compra de R$ 100, cliente VIP	15% de desconto
+CT05	Compra de R$ 499,99, cliente comum	10% de desconto
+CT06	Compra de R$ 500, cliente comum	20% de desconto
+CT07	Compra de R$ 500, cliente VIP	25% de desconto
+CT08	VIP escrito em minúsculo	Reconhecer como VIP
+CT09	Desconto calculado acima de R$ 200	Limitar a R$ 200
+CT10	Compra de R$ 1.000, cliente VIP	Desconto de R$ 200, pelo teto
+CT11	Compra de R$ 0	Desconto de R$ 0
+CT12	Compra de R$ 2.000, cliente comum	Desconto de R$ 200, pelo teto
